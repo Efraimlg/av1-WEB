@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Estilo</title>
+  <!---css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Barbearia Estilo</h1>
+    <button id="toggle-mode">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Bem-vindo à Barbearia Estilo</h2>
+      <p>Seu estilo começa aqui. Cortes modernos, barba na régua e atendimento de primeira.</p>
+    </section>
+
+    <section class="services">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Corte Masculino</li>
+        <li>Barba</li>
+        <li>Sombrancelha</li>
+        <li>Pacote Especial (Corte + Barba)</li>
+      </ul>
+    </section>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="imagens/corte-moderno-classico-masculino.webp" alt="Corte masculino moderno">
+          <div class="caption">Corte Moderno Clássico</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagens/barba-DESENHADA.webp" alt="Barba desenhada">
+          <div class="caption">Barba Desenhada</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagens/CORTE E BARBA NO ESTILIO.webp" alt="Corte e barba no estilo">
+          <div class="caption">Combo Corte + Barba</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagens/degrade-com-risca-lateral-e1683577211461.webp" alt="Corte degradê">
+          <div class="caption">Corte Degradê com Risca</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagens/young-asian-man-beauty-image.webp" alt="Barba com navalha">
+          <div class="caption">Barba com Navalha</div>
+        </div>
+        <div class="gallery-item">
+          <img src="imagens/AdobeStock_226417008.webp" alt="Visual completo">
+          <div class="caption">Visual Completo</div>
+        </div>
+      </div>
+      
+    <section class="contact">
+      <h2>Contato</h2>
+      <p>📞 (71) 99999-0000</p>
+      <p>📍 Rua Estilo nº 7, Salvador - BA</p>
+    </section>
+    <section class="mapa">
+        <h2>Encontre uma Barbearia</h2>
+        <div id="map" style="height: 400px; border-radius: 10px;"></div>
+      </section>
+    <section class="appointment">
+      <h2>Agende seu horário</h2>
+      <form class="appointment-form">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="tel" name="telefone" placeholder="Telefone" required>
+        <input type="datetime-local" name="data" required>
+        <textarea name="mensagem" placeholder="Mensagem opcional"></textarea>
+        <button type="submit">Agendar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barbearia Estilo. Todos os direitos reservados.</p>
+  </footer>
+  <!--javascript-->
+  <script src="js/script.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>

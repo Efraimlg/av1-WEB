@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #333;
+  }
+  
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --accent-color: #555;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #1f1f1f, #3c3c3c);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  #toggle-mode {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  body.dark-mode #toggle-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .services ul {
+    list-style: square inside;
+  }
+  
+  .appointment-form input,
+  .appointment-form textarea,
+  .appointment-form button {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .appointment-form button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .gallery {
+    margin-bottom: 2rem;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 1rem;
+  }
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55); /* fundo preto translúcido */
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .gallery-item:hover .caption {
+    opacity: 1;
+  }
+  .mapa {
+    margin: 2rem 0;
+  }
+  
+  #map {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
